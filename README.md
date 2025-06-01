@@ -19,17 +19,18 @@ conda activate SequenceAutocorrelation
 ```bash
 python3 main.py --help
 ```
+| Argument                   | Type             | Description                         |
+|---------------------------|------------------|-------------------------------------|
+| `-f`, `--file`            | `path`           | Path to the input sequence file     |
+| `-ff`, `--file_format`    | `string`         | Format of the sequence file         |
+| `-ls`, `--lower_shift`    | `integer`        | Lower shift value                   |
+| `-hs`, `--higher_shift`   | `integer`        | Higher shift value                  |
+| `-k`, `--kernel_size`     | `integer`        | Size of the kernel                  |
+| `-mp`, `--midpoint`       | `float`          | Midpoint of the sigmoid function    |
+| `-sp`, `--steepness`      | `float`          | Steepness of the sigmoid function   |
+| `-ps`, `--plot_sigmoid`   | `flag`           | Plot the sigmoid curve              |
+| `-fs`, `--fig_size`       | `float float`    | Width and height of the figure      |
 
-arguments :
-* -f --file <path_to_sequence_file> (path) 
-* -ff --file_format <sequence_file_format> (string) 
-* -ls --lower_shift <value> (integer) 
-* -hs --higher_shift <value> (integer)
-* -k --kernel_size <value> (integer)
-* -mp --midpoint <value> (float)
-* -sp --steepness <value> (float)
-* -ps --plot_sigmoid
-* -fs --fig_size <value> <value> (float float)
 
 # how it works
 
