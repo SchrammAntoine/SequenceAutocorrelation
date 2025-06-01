@@ -55,5 +55,5 @@ In order to translate the previously computed average sequence local identity in
 This sigmoid function can be optimized on two parameters. First, the inflexion point tells about the location of a grey zone in the local identity axis and can be customized by adjusting `-mp`. By default, `-mp=0.5`. Second, the steepness of the sigmoid tells how rapidly the sigmoid switch from zero to one and can be customized by adjusting `-sp`. By default `-sp=20`. You can vizualize the sigmoid function used for scoring using the `-ps` argument.
 
 If you are interested in extremely well conserved motifs in a repeated array, then you can displace the '-md' closer to 1 and `-sp` to higher value.
-If you are interested in shallow repeats, then you can consider lowering `-md` down and increasing `-sp`.
+If you are interested in shallow repeats, then you can consider lowering `-md` down.
 If you don't know what to expect, you can let `-md=0.5` and reduce `-sp` down.
